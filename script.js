@@ -1,3 +1,4 @@
+
 function insert(num) {
     document.getElementById("display").value = document.getElementById("display").value + num;
 }
@@ -15,11 +16,11 @@ function generatePin() {
 // submit button 
 function submitButton(){
  if(document.getElementById('display-pg').value == document.getElementById('display').value){
-        document.getElementById("pin-match").style.display = "block";
-        document.getElementById("not-matched").style.display = "none";
+        document.getElementById("wrong-pin").style.display = "block";
+        document.getElementById("pin-matched").style.display = "none";
     } else {
-        document.getElementById("not-matched").style.display = "block";
-        document.getElementById("pin-match").style.display = "none";
+        document.getElementById("wrong-pin").style.display = "block";
+        document.getElementById("pin-matched").style.display = "none";
     }            
 }
 
